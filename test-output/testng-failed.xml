@@ -8,26 +8,11 @@
           <include name="recipeScrappingToddler"/>
         </methods>
       </class> <!-- test.ToddlerTest -->
-      <class name="test.HealthySaladsTest">
-        <methods>
-          <include name="recipeScrappingHealthysalads"/>
-        </methods>
-      </class> <!-- test.HealthySaladsTest -->
       <class name="test.RecipeScrappingTest">
         <methods>
           <include name="recipeScrapping"/>
         </methods>
       </class> <!-- test.RecipeScrappingTest -->
-      <class name="test.SouthIndianTest">
-        <methods>
-          <include name="recipeScrappingSouthIndian"/>
-        </methods>
-      </class> <!-- test.SouthIndianTest -->
-      <class name="test.Diabetictest">
-        <methods>
-          <include name="recipeScrappingDiabetic"/>
-        </methods>
-      </class> <!-- test.Diabetictest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
