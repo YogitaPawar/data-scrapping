@@ -63,7 +63,7 @@ public class RecipeScrappingTest {
 		
 		//	js.executeScript("window.scrollBy(0,3000)");//"arguments[0].scrollIntoView();", links);
 		excel.WriteHeader();
-		for(int i=1;i<20;i++)//links.size()
+		for(int i=1;i<=links.size();i++)//links.size()
 		{
 			recipePageObj.selectLinkInRecipeListPage(i);
 

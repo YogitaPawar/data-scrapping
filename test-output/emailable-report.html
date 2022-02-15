@@ -9,17 +9,38 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">1,259,490</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">1,687,993</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.RecipeScrappingTest</td><td><a href="#m0">recipeScrapping</a></td><td rowspan="1">1644845320575</td><td rowspan="1">183622</td></tr><tr class="failedodd"><td rowspan="1">test.ToddlerTest</td><td><a href="#m1">recipeScrappingToddler</a></td><td rowspan="1">1644844800902</td><td rowspan="1">198190</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.Diabetictest</td><td><a href="#m2">recipeScrappingDiabetic</a></td><td rowspan="1">1644845757508</td><td rowspan="1">302809</td></tr><tr class="passedodd"><td rowspan="1">test.HealthySaladsTest</td><td><a href="#m3">recipeScrappingHealthysalads</a></td><td rowspan="1">1644844999207</td><td rowspan="1">321363</td></tr><tr class="passedeven"><td rowspan="1">test.SouthIndianTest</td><td><a href="#m4">recipeScrappingSouthIndian</a></td><td rowspan="1">1644845504204</td><td rowspan="1">253298</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.Diabetictest</td><td><a href="#m0">recipeScrappingDiabetic</a></td><td rowspan="1">1644871846960</td><td rowspan="1">14563</td></tr><tr class="failedodd"><td rowspan="1">test.HealthySaladsTest</td><td><a href="#m1">recipeScrappingHealthysalads</a></td><td rowspan="1">1644870588782</td><td rowspan="1">237742</td></tr><tr class="failedeven"><td rowspan="1">test.RecipeScrappingTest</td><td><a href="#m2">recipeScrapping</a></td><td rowspan="1">1644870826532</td><td rowspan="1">826926</td></tr><tr class="failedodd"><td rowspan="1">test.SouthIndianTest</td><td><a href="#m3">recipeScrappingSouthIndian</a></td><td rowspan="1">1644871653476</td><td rowspan="1">193479</td></tr><tr class="failedeven"><td rowspan="1">test.ToddlerTest</td><td><a href="#m4">recipeScrappingToddler</a></td><td rowspan="1">1644870173592</td><td rowspan="1">415118</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">test.RecipeScrappingTest#recipeScrapping</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+<h2>Test</h2><h3 id="m0">test.Diabetictest#recipeScrappingDiabetic</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.IOException: Zip bomb detected! The file would exceed the max. ratio of compressed file size to the size of the expanded data.
+This may indicate that the file is used to inflate memory usage and thus could pose a security risk.
+You can adjust this limit via ZipSecureFile.setMinInflateRatio() if you need to work with files which exceed this limit.
+Uncompressed size: 102480, Raw/compressed size: 759, ratio: 0.007406
+Limits: MIN_INFLATE_RATIO: 0.010000, Entry: xl/styles.xml
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.checkThreshold(ZipArchiveThresholdInputStream.java:132)
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.read(ZipArchiveThresholdInputStream.java:82)
+	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:185)
+	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:153)
+	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:140)
+	at org.apache.poi.openxml4j.util.ZipArchiveFakeEntry.&lt;init&gt;(ZipArchiveFakeEntry.java:67)
+	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:98)
+	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:132)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:312)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:47)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:296)
+	at utils.ExcelUtils.setCellData(ExcelUtils.java:78)
+	at test.Diabetictest.recipeScrappingDiabetic(Diabetictest.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">test.HealthySaladsTest#recipeScrappingHealthysalads</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
 System info: host: &apos;DESKTOP-P6E0VNQ&apos;, ip: &apos;172.20.20.20&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5d2e847e97401104008dfbd6dddeb22a, get {url=https://www.tarladalal.com/recipes-for-high-blood-pressure-644}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\yogit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64837}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64837/devtoo..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5d2e847e97401104008dfbd6dddeb22a
+Command: [f2c0fbe4f523d43d063aa5efa6070c02, clickElement {id=964c0748-2cd6-4a9b-bf6b-38ea346cbcd7}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.48 (d869ab3eda606..., userDataDir: C:\Users\yogit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57022}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57022/devtoo..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f2c0fbe4f523d43d063aa5efa6070c02)] -&gt; xpath: //article[@class=&apos;rcc_recipecard&apos;][7]//div[@class=&apos;rcc_rcpcore&apos;]/span[1]/a]
+Session ID: f2c0fbe4f523d43d063aa5efa6070c02
 	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
 	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
 	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
@@ -31,24 +52,78 @@ Session ID: 5d2e847e97401104008dfbd6dddeb22a
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:328)
-	at test.RecipeScrappingTest.recipeScrapping(RecipeScrappingTest.java:39)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at objectRepository.RecipePageObjects.selectLinkInRecipeListPage(RecipePageObjects.java:49)
+	at test.HealthySaladsTest.recipeScrappingHealthysalads(HealthySaladsTest.java:75)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 Caused by: java.util.concurrent.TimeoutException
 	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
 	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
 	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
 	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
-	... 40 more
+	... 42 more
 ... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">test.ToddlerTest#recipeScrappingToddler</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+<h3 id="m2">test.RecipeScrappingTest#recipeScrapping</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
 System info: host: &apos;DESKTOP-P6E0VNQ&apos;, ip: &apos;172.20.20.20&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0c8568a31853f5ce86bc18834bb5dbe4, clickElement {id=210a09b4-a90c-4ecc-a461-eba7272ccca9}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.48 (d869ab3eda606..., userDataDir: C:\Users\yogit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63508}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63508/devtoo..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (0c8568a31853f5ce86bc18834bb5dbe4)] -&gt; xpath: //article[@class=&apos;rcc_recipecard&apos;][1]//div[@class=&apos;rcc_rcpcore&apos;]/span[1]/a]
-Session ID: 0c8568a31853f5ce86bc18834bb5dbe4
+Command: [d72b5e425c50f2e85ae1f991b8839a0f, findElement {using=id, value=rcpnutrients}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\yogit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57296}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57296/devtoo..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d72b5e425c50f2e85ae1f991b8839a0f
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:119)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at objectRepository.RecipePageObjects.getNutritionValues(RecipePageObjects.java:68)
+	at test.RecipeScrappingTest.recipeScrapping(RecipeScrappingTest.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
+	... 44 more
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">test.SouthIndianTest#recipeScrappingSouthIndian</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.IOException: Zip bomb detected! The file would exceed the max. ratio of compressed file size to the size of the expanded data.
+This may indicate that the file is used to inflate memory usage and thus could pose a security risk.
+You can adjust this limit via ZipSecureFile.setMinInflateRatio() if you need to work with files which exceed this limit.
+Uncompressed size: 102480, Raw/compressed size: 759, ratio: 0.007406
+Limits: MIN_INFLATE_RATIO: 0.010000, Entry: xl/styles.xml
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.checkThreshold(ZipArchiveThresholdInputStream.java:132)
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.read(ZipArchiveThresholdInputStream.java:82)
+	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:185)
+	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:153)
+	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:140)
+	at org.apache.poi.openxml4j.util.ZipArchiveFakeEntry.&lt;init&gt;(ZipArchiveFakeEntry.java:67)
+	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:98)
+	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:132)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:312)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:47)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:296)
+	at utils.ExcelUtils.setCellData(ExcelUtils.java:78)
+	at test.SouthIndianTest.recipeScrappingSouthIndian(SouthIndianTest.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">test.ToddlerTest#recipeScrappingToddler</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-P6E0VNQ&apos;, ip: &apos;172.20.20.20&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [93dde87b887e6cec9f92dad4cc09d2c3, clickElement {id=8d143732-d59b-4439-9bc2-d2c9e0ffd151}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.48 (d869ab3eda606..., userDataDir: C:\Users\yogit\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56499}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56499/devtoo..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (93dde87b887e6cec9f92dad4cc09d2c3)] -&gt; xpath: //article[@class=&apos;rcc_recipecard&apos;][13]//div[@class=&apos;rcc_rcpcore&apos;]/span[1]/a]
+Session ID: 93dde87b887e6cec9f92dad4cc09d2c3
 	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
 	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
 	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
@@ -72,8 +147,5 @@ Caused by: java.util.concurrent.TimeoutException
 	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:66)
 	... 42 more
 ... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">test.Diabetictest#recipeScrappingDiabetic</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">test.HealthySaladsTest#recipeScrappingHealthysalads</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">test.SouthIndianTest#recipeScrappingSouthIndian</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
